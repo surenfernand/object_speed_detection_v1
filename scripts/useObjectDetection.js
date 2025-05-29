@@ -19,5 +19,5 @@ export const detectObjects = async (base64) => {
   const imageTensor = decodeJpeg(raw);
 
   const predictions = await model.detect(imageTensor);
-  return predictions; // [{bbox, class, score}, ...]
+  return predictions; 
 };
